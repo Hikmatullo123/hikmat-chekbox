@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+.form{
+   background-color: black;
+   padding: 40px;
+   max-width: 500px;
+   margin: 40px auto; 
+}
+.label{
+  font-size: 30px;
+  display: inline-flex;
+  align-items: center;
+}
+.sabzi{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+.fakeinputs{
+    border-radius: 5px;
+    border: 2px solid gray;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+    transition: 0.2s all linear;
+    position: relative;
+}
+.d{
+    position: absolute;
+    font-size: 20px;
+    right: 2%;
+    bottom: 4%;
+    margin: 3px 3px;
+    color: gray;
+    opacity: 0;
+}
+.label:hover .d{
+    opacity: 1;
+}
+.web{
+    margin-right: 10px;
+    color: brown;
+}
+.web1{
+    margin-right: 10px;
+    color: red;
+}
+.web2{
+    margin-right: 10px;
+    color: wheat;
+}
+.big{
+    margin-bottom: 10px;
+}
+.big:last-child{
+    margin-bottom: 0;
+}
+.t{
+    color: gray;
+}
+.fakeinputs:checked{
+    background-color: darkcyan;
+}
+.t:hover{
+    color: white;
+}
+.input:checked ~  .fakeinputs{
+   background-color:  blue;
+}
